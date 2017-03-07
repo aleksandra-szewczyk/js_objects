@@ -10,11 +10,11 @@ Telefon.prototype.printInfo = function() {
 		console.log("Marka telefonu to " + this.marka + ", kolor to " + this.kolor + ", a cena to " + this.cena + ".");
 }
 
-Telefon.prototype.compare = function(model) {
-    if (this.przekatna > model.przekatna) {
-        console.log(this.marka + " ma większą przekątną ekranu " + model.marka + " o " + (this.przekatna - model.przekatna) + ' cali/-a.');
+Telefon.prototype.compare = function(Telefon) {
+    if (this.przekatna > Telefon.przekatna) {
+        console.log(this.marka + " ma większą przekątną ekranu od " + Telefon.marka + " o " + (this.przekatna - Telefon.przekatna) + ' cali/-a.');
     } else {
-        console.log(this.marka + " ma mniejszą przekątną ekranu " + model.marka + " o " + (model.przekatna - this.przekatna) + ' cali/-a.');
+        console.log(this.marka + " ma mniejszą przekątną ekranu od " + Telefon.marka + " o " + (Telefon.przekatna - this.przekatna) + ' cali/-a.');
     }
 }
 
